@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>love for all</title>
+<style>
+  .box {
+    width: 120px;
+    height: 40px;
+    background-color: #f0f8ff;
+    border: 2px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #006400;
+    transition: background-color 0.3s ease;
+  }
+
+  .box:hover {
+    background-color: #e0f2e0;
+  }
+</style>
+</head>
+<body>
+
+<div class="box" id="onePieceBox">1 Piece</div>
+<div class="box" id="twoPieceBox">2 Piece</div>
+<div class="box" id="threePieceBox">3 Piece</div>
+
+<input type="text" id="searchInput" placeholder="Search...">
+<button id="searchButton">Go</button>
+
+<p style="font-size:50px;">welcome to love for all</p>
+<h1 style="color:brown;">we have all kinds of 1-piece,2-piece and 3-piece dress collections</h1>
+
+<p style="font-size:60px;" id="onePieceSection">all our 1 piece collections</p>
+<h1>we are out of stock</h1>
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+<img src="" alt="one piece" width="222" height="333">
+
+<p style="font-size:60px;" id="twoPieceSection">all our 2 piece collections</p>
+<h1>we are out of stock</h1>
+<img src="" alt="two piece" width="444" height="333">
+<img src="" alt="two piece" width="444" height="333">
+<img src="" alt="two piece" width="444" height="333">
+<img src="" alt="two piece" width="444" height="333">
+
+<p style="font-size:60px;" id="threePieceSection">all our 3 piece collections</p>
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0002.jpg" alt="three piece" width="222" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0003.jpg" alt="three piece" width="222" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0004.jpg" alt="three piece" width="222" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0005.jpg" alt="three piece" width="444" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0006.jpg" alt="three piece" width="222" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0007.jpg" alt="three piece" width="222" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0008.jpg" alt="three piece" width="222" height="333">
+<img src="C:/Users/info/Music/love%20for%20all%20webz%20photo/IMG-20250304-WA0009.jpg" alt="three piece" width="222" height="333">
+
+
+
+
+<p style="font-size:35px;"> for buying contact us</p>
+<p>---------------farahaziza2007@gmail.com---------------</p>
+
+<script>
+  document.getElementById('onePieceBox').addEventListener('click', function() {
+    document.getElementById('onePieceSection').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('twoPieceBox').addEventListener('click', function() {
+    document.getElementById('twoPieceSection').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('threePieceBox').addEventListener('click', function() {
+    document.getElementById('threePieceSection').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('searchButton').addEventListener('click', function() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase(); // Get search term
+    if (searchTerm.includes('1 piece')) {
+      document.getElementById('onePieceSection').scrollIntoView({ behavior: 'smooth' });
+    } else if (searchTerm.includes('2 piece')) {
+      document.getElementById('twoPieceSection').scrollIntoView({ behavior: 'smooth' });
+    } else if (searchTerm.includes('3 piece')) {
+      document.getElementById('threePieceSection').scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+</script>
+
+</body>
+</html>
